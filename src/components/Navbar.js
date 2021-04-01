@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className='collapse navbar-collapse' id='navbarNavAltMarkup' style={{marginLeft: '15%', letterSpacing: 3}}>
         <div className='navbar-nav'>
 
-          <Link className='nav-link' style={{marginRight: '6%'}} to=''>
+          <Link className='nav-link' style={{marginRight: '6%'}} to='/'>
             Home
           </Link>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
             Member
           </Link>
 
-          <Link className='nav-link' style={{textAlign: 'center'}} to=''>
+          <Link className='nav-link' style={{textAlign: 'center'}} to='/memberForm'>
             Join
           </Link>
 
