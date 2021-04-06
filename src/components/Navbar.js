@@ -35,7 +35,6 @@ const Navbar = () => {
           <Link className='nav-link' style={{marginRight: '6%'}} to='/member'>
             Member
           </Link>
-
           <Link className='nav-link' style={{textAlign: 'center'}} to='../pages/AddMember.js'>
             Join
           </Link>
