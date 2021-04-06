@@ -56,7 +56,7 @@ export const membersData = [
         linkedIn: 'https://www.linkedin.com/in/harrison-stamps-201184142/',
         github: 'https://github.com/hstamps-stack',
         bio: 'lorem ipsum',
-        profile_img: 'https://ibb.co/cwz8zv9',
+        profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQGXMfWZzwMopA/profile-displayphoto-shrink_200_200/0/1616791326115?e=1622678400&v=beta&t=NfnQ4TAUTfkEIsA2gt_HBsv_wOLJ22NAfYDW4zDhsUc',
         languages: ['html','css', 'javascript', 'react','react native ', 'nodeJS', 'mongoDB', 'express']
     },
     {
