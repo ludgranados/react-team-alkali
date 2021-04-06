@@ -24,19 +24,19 @@ const Navbar = () => {
       <div className='collapse navbar-collapse' id='navbarNavAltMarkup' style={{marginLeft: '15%', letterSpacing: 3}}>
         <div className='navbar-nav'>
 
-          <Link className='nav-link' style={{marginRight: '6%'}} to=''>
+          <Link className='nav-link' style={{marginRight: '6%'}} to='/'>
             Home
           </Link>
 
-          <Link className='nav-link' style={{marginRight: '6%'}} to=''>
+          <Link className='nav-link' style={{marginRight: '6%'}} to='/members'>
             Members 
           </Link>
 
-          <Link className='nav-link' style={{marginRight: '6%'}} to=''>
+          <Link className='nav-link' style={{marginRight: '6%'}} to='/member'>
             Member
           </Link>
 
-          <Link className='nav-link' style={{textAlign: 'center'}} to=''>
+          <Link className='nav-link' style={{textAlign: 'center'}} to='../pages/AddMember.js'>
             Join
           </Link>
 
