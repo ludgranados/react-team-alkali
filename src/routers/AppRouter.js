@@ -3,8 +3,7 @@ import Navbar from '../components/Navbar';
 import HomePage from '../pages/Home';
 import AddMemberPage from '../pages/AddMember';
 import MembersPage from '../pages/Members';
-import MemberPage from '../pages/Member';
-
+import MemberPage from '../pages/Member'
 
 const AppRouter = () => {
   return (
@@ -13,13 +12,13 @@ const AppRouter = () => {
       <div className='container'>
         <Switch>
         
-        {/* <Route path='/' exact component={HomePage} /> */}
+        <Route path='/' exact component={HomePage} />
 
         <Route path='/members' exact component={MembersPage} />
 
-         <Route path='/members/:memberId' component={MemberPage} />
+        <Route path='/members/:memberId' component={MemberPage} />
 
-        {/* <Route path='/memberForm' component={AddMemberPage} /> */}
+        <Route path='/MemberForm' exact component={AddMemberPage} />
 
         </Switch>
       </div>
