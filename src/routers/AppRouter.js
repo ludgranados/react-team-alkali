@@ -18,7 +18,8 @@ const AppRouter = () => {
 
         <Route path='/members/:memberId' component={MemberPage} />
 
-        <Route path='/MemberForm' exact component={AddMemberPage} />
+        <Route path='/add-member' component={AddMemberPage} />
+ 
 
         </Switch>
       </div>
