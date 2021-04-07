@@ -2,8 +2,8 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import HomePage from '../pages/Home';
 import AddMemberPage from '../pages/AddMember';
-// import MembersPage from '../pages/Members';
-// import MemberPage from '../pages/Member';
+import MembersPage from '../pages/Members';
+import MemberPage from '../pages/Member';
 
 
 const AppRouter = () => {
@@ -15,11 +15,11 @@ const AppRouter = () => {
         
         <Route path='/' exact component={HomePage} />
 
-        {/* <Route path='/members' component={MembersPage} /> */}
+        <Route path='/members' exact component={MembersPage} />
 
-        {/* <Route path='/member/memberId' component={MemberPage} /> */}
+         <Route path='/members/:memberId' component={MemberPage} />
 
-        <Route path='/memberForm' component={AddMemberPage} />
+        <Route path='/add-member' component={AddMemberPage} />
 
         </Switch>
       </div>

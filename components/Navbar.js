@@ -32,10 +32,10 @@ const Navbar = () => {
             Members 
           </Link>
 
-          {/* <Link className='nav-link' style={{marginRight: '6%'}} to='/member'>
+          <Link className='nav-link' style={{marginRight: '6%'}} to='/member'>
             Member
-          </Link> */}
-          <Link className='nav-link' style={{textAlign: 'center'}} to='/add-member'>
+          </Link>
+          <Link className='nav-link' style={{textAlign: 'center'}} to='../pages/AddMember.js'>
             Join
           </Link>
 
