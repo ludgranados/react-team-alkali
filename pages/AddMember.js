@@ -1,6 +1,6 @@
 import { membersData } from '../data/members';
-import { useState, useEffect } from 'react';
-import MembersCard from '../components/MembersCard';
+import { useState } from 'react';
+import MembersPage from '../pages/Members';
 
 const MemberForm = () => {
 
@@ -20,13 +20,6 @@ const MemberForm = () => {
  
   );
 
-
-  useEffect(()=> {
-    setMembers(membersData)
-    console.log(members);
-
-  }, [members, member]);
-
   const saveMember = () => {
   
     member.id = Date.now();
@@ -34,18 +27,6 @@ const MemberForm = () => {
     setMembers(membersData);
     console.log('member has been added to Team Alkali');
 
-    setMember({
-      id: '',
-      role: '', 
-      firstName: '',
-      lastName: '',
-      email: '',
-      linkedIn: '',
-      github: '',
-      bio: '',
-      profile_img: '',
-      languages: [],
-    })
   }
 
   const handleSubmit = (e) => {
@@ -166,20 +147,8 @@ const MemberForm = () => {
 
       </div>
        </form>
-
-
       
-       <div className="row">
-                <div className="col d-flex flex-row flex-wrap">
-                    {members.map((m, i) =>{
-                        return(
-                            <div key ={i}>
-                                < MembersCard member={m} />
-                            </div>
-                        )
-                    })}
-                </div>
-            </div>
+      <MembersPage />
 
       </div>
     )

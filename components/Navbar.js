@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -8,7 +7,7 @@ const Navbar = () => {
     <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
 
       <h1 className='navbar-brand'>
-        Team Alkali
+        ALKALI
       </h1>
 
       <button
@@ -33,11 +32,10 @@ const Navbar = () => {
             Members 
           </Link>
 
-
-          {/* <Link className='nav-link' style={{marginRight: '6%'}} to='/member'>
+          <Link className='nav-link' style={{marginRight: '6%'}} to='/member'>
             Member
-          </Link> */}
-          <Link className='nav-link' style={{textAlign: 'center'}} to='/add-member'>
+          </Link>
+          <Link className='nav-link' style={{textAlign: 'center'}} to='../pages/AddMember.js'>
             Join
           </Link>
 

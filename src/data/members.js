@@ -1,5 +1,8 @@
+
 export const membersData = [
     {
+        id: 1,
+        role: 'React Lead',
         firstName: 'Alex',
         lastName: 'Gutierrez',
         email: 'agutierrez@bitwiseindustries.com',
@@ -10,6 +13,8 @@ export const membersData = [
         languages: ['html','css', 'javascript']
     },
     {
+        id: 2,
+        role: 'React Apprentice',
         firstName: 'Anna',
         lastName:'Jimenez',
         email: 'annamariej1015@gmail.com',
@@ -20,6 +25,8 @@ export const membersData = [
         languages: ['html', 'css', 'javascript', 'react', 'react native ', 'nodeJS', 'mongoDB', 'express']
     },
     {
+        id: 3,
+        role: 'React Apprentice',
         firstName: 'Brittney',
         lastName:'Cavazos',
         email:'bcavazos@alphaworks.tech',
@@ -30,6 +37,8 @@ export const membersData = [
         languages:['html','css','javascript', 'react']
     },
     {
+        id: 4,
+        role: 'React Apprentice',
         firstName: 'Elizabeth',
         lastName: 'Gaw',
         email: 'hello.xyeras@gmail.com',
@@ -40,16 +49,20 @@ export const membersData = [
         languages: ['html','css', 'javascript', 'react', 'python', 'haskell', 'oz', 'c++']
     },
     {
+        id: 5,
+        role: 'React Apprentice',
         firstName: 'Harrison',
         lastName: 'Stamps',
         email: 'hstamps4@gmail.com',
         linkedIn: 'https://www.linkedin.com/in/harrison-stamps-201184142/',
         github: 'https://github.com/hstamps-stack',
         bio: 'lorem ipsum',
-        profile_img: 'https://ibb.co/cwz8zv9',
+        profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQGXMfWZzwMopA/profile-displayphoto-shrink_200_200/0/1616791326115?e=1622678400&v=beta&t=NfnQ4TAUTfkEIsA2gt_HBsv_wOLJ22NAfYDW4zDhsUc',
         languages: ['html','css', 'javascript', 'react','react native ', 'nodeJS', 'mongoDB', 'express']
     },
     {
+        id: 6,
+        role: 'React Apprentice',
         firstName: 'Jeffrey',
         lastName: 'Rios',
         email: 'jeffriosjr@gmail.com',
@@ -60,6 +73,8 @@ export const membersData = [
         languages: ['html','css', 'javascript', 'react']
     },
     {
+        id: 7,
+        role: 'React Apprentice',
         firstName: 'Ludwin',
         lastName: 'Granados',
         email: 'ludwingranados@gmail.com',
@@ -70,6 +85,8 @@ export const membersData = [
         languages: ['html', 'css', 'javascript', 'react']
     },
     {
+        id: 8,
+        role: 'React Apprentice',
         firstName: 'Merhawit',
         lastName:'Gubsa',
         email:'merhawitgubsa@gmail.com',
@@ -80,6 +97,8 @@ export const membersData = [
         languages:['html','css','react','javascript','java']
     },
     {
+        id: 9,
+        role: 'React Apprentice',
         firstName: 'Nakia',
         lastName: 'Callaway',
         email: 'nik.callaway@outlook.com',
@@ -90,6 +109,8 @@ export const membersData = [
         languages: ['html', 'css', 'javascript', 'react']
     },
     {
+        id: 10,
+        role: 'React Apprentice',
         firstName: 'Pardeep',
         lastName: 'Sanghera',
         email: 'pradeepsanghera@gmail.com',
@@ -100,6 +121,8 @@ export const membersData = [
         languages: ['html','css', 'javascript', 'react']
     },
     {
+        id: 11,
+        role: 'React Apprentice',
         firstName: 'Pravalika',
         lastName: 'Ammineni',
         email: 'pravallikaammineni@gmail.com',
