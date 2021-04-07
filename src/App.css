@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+.th-members-img {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}

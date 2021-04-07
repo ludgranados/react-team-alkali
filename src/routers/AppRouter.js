@@ -13,13 +13,14 @@ const AppRouter = () => {
       <div className='container'>
         <Switch>
         
-        <Route path='/' exact component={HomePage} />
+        {/* <Route path='/' exact component={HomePage} /> */}
 
         <Route path='/members' exact component={MembersPage} />
 
          <Route path='/members/:memberId' component={MemberPage} />
 
         <Route path='/add-member' component={AddMemberPage} />
+ 
 
         </Switch>
       </div>
