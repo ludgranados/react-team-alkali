@@ -105,7 +105,7 @@ export const membersData = [
         linkedIn: 'https://www.linkedin.com/in/nakia-callaway-31201b6/',
         github: 'https://github.com/nakiacallaway',
         bio: 'Coming to California is yet another stop on my long journey all over the country.  I recently moved for the 98th time.  My hobbies are woodworking, cooking, and gaming, both tabletop and computer.',
-        profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQEJxnc9lSOCoQ/profile-displayphoto-shrink_[…]78400&v=beta&t=4rLw8CsI9swqad9snNQPeCPyXLpwBCyqGrTkGyysnFo',
+        profile_img: 'https://media-exp1.licdn.com/dms/image/C5603AQEJxnc9lSOCoQ/profile-displayphoto-shrink_800_800/0/1611900669466?e=1622678400&v=beta&t=4rLw8CsI9swqad9snNQPeCPyXLpwBCyqGrTkGyysnFo',
         languages: ['html', 'css', 'javascript', 'react']
     },
     {

@@ -1,6 +1,6 @@
 import { membersData } from '../data/members';
 import { useState, useEffect } from 'react';
-import MembersCard from '../components/MembersCard';
+import { Link } from 'react-router-dom';
 
 const MemberForm = () => {
 
@@ -31,7 +31,6 @@ const MemberForm = () => {
   
     member.id = Date.now();
     membersData.push(member);
-    setMembers(membersData);
     console.log('member has been added to Team Alkali');
 
     setMember({
@@ -53,28 +52,41 @@ const MemberForm = () => {
     e.preventDefault();
     console.log('member', e.target.value, 'is saved!');
     saveMember();
-    alert(e.target.value);
-
+    alert('Member added to Team Alkali')
   }  
   
     return (
       
-      <div className='my-2 text-center'>
+      <div className='my-2'>
 
-       <form id='member-form' action='submit' onSubmit={handleSubmit}>
-       <div className='col md-col-12 lg-col-10'> 
+       <form id='member-form' 
+       action='submit' 
+       onSubmit={handleSubmit}>
+         
+       <div className='col md-col-12 lg-col-10 text-center'> 
          <br/>
         <p style={{fontSize: '250%'}}>Add a Member to Team Alkali</p>
          <br/>
        </div>
 
-      <div className='card'>
+      <div className='card card-body text-left' 
+      style={{
+        width: '90%', 
+        margin: '5%', 
+        marginTop: '-1%', 
+        backgroundImage: 'url(https://i.ibb.co/2tjZN9Z/Team-Alkali-Logo-form-letters.png)', 
+        backgroundSize: '20%', 
+        backgroundRepeat: 'no-repeat', 
+        backgroundPosition: 'top center'}}>
 
-       <div className='form-row'>
+       <div className='form-row' >
 
-         <div className='form-group col-4'>
-           <label htmlFor="role" style={{marginTop: '2%'}}>Role</label>
-           <input type="text" class="form-control" id="role" value={member.role} style={{marginLeft: '2.5%'}}
+         <div className='form-group col-11'>
+           <label htmlFor="role" style={{marginTop: '12%', marginLeft: '7%', fontWeight: '800'}}>
+             Role
+           </label>
+           <input type="text" class="form-control" id="role" value={member.role} 
+           style={{marginLeft: '5%'}}
            onChange={event => {
              setMember({...member, role: event.target.value});
            }}  />
@@ -84,17 +96,27 @@ const MemberForm = () => {
 
        <div className='form-row'>
 
-         <div className='form-group col-5'>
-           <label htmlFor="firstName" style={{marginTop: '2%'}}>First Name</label>
-           <input type="text" class="form-control" id="firstName" value={member.firstName} style={{marginLeft: '2%'}}
+         <div className='form-group col-11'>
+           <label htmlFor="firstName" style={{marginTop: '2%', marginLeft: '7%', fontWeight: '800'}}>
+             First Name
+           </label>
+           <input type="text" class="form-control" id="firstName" value={member.firstName} 
+           style={{marginLeft: '5%'}}
            onChange={event => {
              setMember({...member, firstName: event.target.value});
            }}  />
          </div>
 
-         <div className='form-group col-5'>
-           <label htmlFor="lastName" style={{marginTop: '2%'}}>Last Name</label>
-           <input type="text" class="form-control" id="lastName" value={member.lastName} style={{marginLeft: '2%'}}
+         </div>
+
+         <div className='form-row'>
+
+         <div className='form-group col-11'>
+           <label htmlFor="lastName" style={{marginTop: '2%', marginLeft: '7%', fontWeight: '800'}}>
+             Last Name
+           </label>
+           <input type="text" class="form-control" id="lastName" value={member.lastName} 
+           style={{marginLeft: '5%'}}
            onChange={event => {
              setMember({...member, lastName: event.target.value});
            }}  />
@@ -104,25 +126,42 @@ const MemberForm = () => {
 
        <div className='form-row'>
 
-         <div className='form-group col-4'>
-           <label htmlFor="email" style={{marginTop: '2%'}}>E-mail</label>
-           <input type="text" class="form-control" id="email" value={member.email} style={{marginLeft: '.5%'}}
+         <div className='form-group col-11'>
+           <label htmlFor="email" style={{marginTop: '2%', marginLeft: '7%', fontWeight: '800'}}>
+             E-mail
+           </label>
+           <input type="text" class="form-control" id="email" value={member.email} 
+           style={{marginLeft: '5%'}}
            onChange={event => {
              setMember({...member, email: event.target.value});
            }}  />
          </div>
 
-         <div className='form-group col-4'>
-           <label htmlFor="linkedIn" style={{marginTop: '2%'}}>LinkedIn</label>
-           <input type="text" class="form-control" id="linkedIn" value={member.linkedIn} style={{marginLeft: '-.5%'}}
+         </div>
+
+         <div className='form-row'>
+
+         <div className='form-group col-11'>
+           <label htmlFor="linkedIn" style={{marginTop: '2%', marginLeft: '7%', fontWeight: '800'}}>
+             LinkedIn
+           </label>
+           <input type="text" class="form-control" id="linkedIn" value={member.linkedIn} 
+           style={{marginLeft: '5%'}}
            onChange={event => {
              setMember({...member, linkedIn: event.target.value});
            }}  />
          </div>
 
-         <div className='form-group col-4'>
-           <label htmlFor="github" style={{marginTop: '2%'}}>Github</label>
-           <input type="text" class="form-control" id="github" value={member.github} style={{marginLeft: '-1%'}}
+         </div>
+
+         <div className='form-row'>
+
+         <div className='form-group col-11'>
+           <label htmlFor="github" style={{marginTop: '2%', marginLeft: '7%', fontWeight: '800'}}>
+             Github
+           </label>
+           <input type="text" class="form-control" id="github" value={member.github} 
+           style={{marginLeft: '5%'}}
            onChange={event => {
              setMember({...member, github: event.target.value});
            }}  />
@@ -133,8 +172,11 @@ const MemberForm = () => {
        <div className='form-row'>
 
          <div className='form-group col-11'>
-           <label htmlFor="bio" style={{marginTop: '2%'}}>Bio</label>
-           <input type="text" class="form-control" id="bio" value={member.bio} style={{marginLeft: '1%'}}
+           <label htmlFor="bio" style={{marginTop: '2%', marginLeft: '7%', fontWeight: '800'}}>
+             Bio
+           </label>
+           <input type="text" class="form-control" id="bio" value={member.bio} 
+           style={{marginLeft: '5%'}}
            onChange={event => {
              setMember({...member, bio: event.target.value});
            }}  />
@@ -144,17 +186,27 @@ const MemberForm = () => {
 
        <div className='form-row'>
 
-       <div className='form-group col-5'>
-           <label htmlFor="profile_img" style={{marginTop: '2%'}}>Profile Image</label>
-           <input type="text" class="form-control" id="profile_img" value={member.profile_img} style={{marginLeft: '2%', marginTop: '.5%'}}
+       <div className='form-group col-11'>
+           <label htmlFor="profile_img" style={{marginTop: '2%', marginLeft: '7%', fontWeight: '800'}}>
+             Profile Image
+           </label>
+           <input type="text" class="form-control" id="profile_img" value={member.profile_img} 
+           style={{marginLeft: '5%', marginTop: '.5%'}}
            onChange={event => {
              setMember({...member, profile_img: event.target.value});
            }}  />
          </div>
 
-         <div className='form-group col-6'>
-           <label htmlFor="languages" style={{marginTop: '2%'}}>Languages</label>
-           <input type="text" class="form-control" id="languages" value={member.languages} style={{marginLeft: '2%'}}
+       </div>
+
+       <div className='form-row'>
+
+         <div className='form-group col-11'>
+           <label htmlFor="languages" style={{marginTop: '2%', marginLeft: '7%', fontWeight: '800'}}>
+             Languages
+           </label>
+           <input type="text" class="form-control" id="languages" value={member.languages} 
+           style={{marginLeft: '5%'}}
            onChange={event => {
              setMember({...member, languages: [event.target.value]});
            }}  />
@@ -162,7 +214,10 @@ const MemberForm = () => {
         
        </div>
 
-       <button type="submit" class="btn btn-dark btn-outline-light btn-block" style={{marginBottom: '1%', marginLeft: '1%', marginRight: '1%'}}>Save Member</button>
+       <button type="submit" class="btn btn-dark btn-outline-light" 
+       style={{marginTop: '2%', marginLeft: '35%', marginRight: '1%', width: '30%'}}>
+         Save Member
+       </button>
 
       </div>
        </form>
@@ -170,16 +225,41 @@ const MemberForm = () => {
 
       
        <div className="row">
-                <div className="col d-flex flex-row flex-wrap">
-                    {members.map((m, i) =>{
-                        return(
-                            <div key ={i}>
-                                < MembersCard member={m} />
-                            </div>
-                        )
-                    })}
+        <div className="col d-flex flex-row flex-wrap">
+          {members.map((member, i) => {
+            return (
+              <div key={i}>
+                <div className="d-flex m-3">
+                  <div
+                    className="card"
+                    style={{ width: "15rem", border: "white" }}
+                  >
+                    <img
+                      className="card-img-top align-self-center"
+                      src={member.profile_img}
+                      alt="Alkali member"
+                      style={{ borderRadius: "50%", width: "10rem" }}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-text">
+                        {" "}
+                        {member.firstName} {member.lastName}
+                      </h5>
+                      <p className="card-text mb-1">
+                        {" "}
+                        <strong>Role:</strong> {member.role}
+                      </p>
+                      <p className="card-link mb-1">
+                        <Link to={`/members/${member.id}`}>View Details</Link>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       </div>
     )
