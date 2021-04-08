@@ -1,7 +1,6 @@
 import {membersData} from "../data/members";
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
-import memberCard from '../components/MembersCard'
 
 const MemberPage = () =>{
     const [member,setMember] = useState({
