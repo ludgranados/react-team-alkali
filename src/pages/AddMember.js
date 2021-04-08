@@ -31,7 +31,6 @@ const MemberForm = () => {
   
     member.id = Date.now();
     membersData.push(member);
-    setMembers(membersData);
     console.log('member has been added to Team Alkali');
 
     setMember({
@@ -53,8 +52,7 @@ const MemberForm = () => {
     e.preventDefault();
     console.log('member', e.target.value, 'is saved!');
     saveMember();
-    alert(e.target.value);
-
+    alert('Member added to Team Alkali')
   }  
   
     return (
