@@ -1,6 +1,7 @@
 import {membersData} from "../data/members";
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
+import memberCard from '../components/MembersCard'
 
 const MemberPage = () =>{
     const [member,setMember] = useState({
@@ -27,7 +28,7 @@ const MemberPage = () =>{
         <div id="member d-flex justify-content-between">
             <div className="row mt-4">
                 <div className="col-8">
-                    <div className="card">
+                    <div className="card bg-light">
                         <div className="card-body row">
                             <div className="col-lg-5 col-md-6">
                                 <img src={member.profile_img} 
@@ -54,6 +55,12 @@ const MemberPage = () =>{
                                 </p>
                                 <h5 className="my-2 card-title">Bio</h5>
                                 <p className="card-text">{member.bio}</p>
+                                <h5 className="my-2 card-title">Email</h5>
+                                <a className="card-link">{member.email}</a>
+                                <h5 className="card-text my-2">Github</h5>
+                                <a  className ="card-link"href={member.github}>{member.github}</a>
+                                <h5 className="card-text my-2">LinkedIn</h5>
+                                <a  className ="card-link"href={member.linkedIn}>{member.linkedIn}</a>
                             </div>    
                         </div>
                     </div>
