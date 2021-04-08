@@ -5,11 +5,13 @@ const Navbar = () => {
 
   return (
     
-    <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
+    <nav className='navbar navbar-expand-md navbar-dark bg-dark' style={{backgroundImage: 'url(https://i.ibb.co/8chf2DV/Team-Alkali-Logo-react-background.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: '130%', opacity: '.9'}}>
 
-      <h1 className='navbar-brand'>
-        Team Alkali
-      </h1>
+      <div>
+        <img src="https://i.ibb.co/bd76Zk4/Team-Alkali-small-logo.png" alt="Team-Alkali-React-Logo" />
+      </div>
+    
+     
 
       <button
         className='navbar-toggler'
@@ -22,13 +24,13 @@ const Navbar = () => {
         <span className='navbar-toggler-icon'></span>
       </button>
 
-      <div className='collapse navbar-collapse' id='navbarNavAltMarkup' style={{marginLeft: '15%', letterSpacing: 3}}>
+      <div className='collapse navbar-collapse' id='navbarNavAltMarkup' style={{marginLeft: '1%', letterSpacing: 3, backgroundColor: 'black', opacity: '.9'}}>
         <div className='navbar-nav'>
 
-          <Link className='nav-link' style={{marginRight: '6%'}} to='/'>
-            Home
+          <Link className='nav-link' style={{marginRight: '6%', marginLeft: '170%'}} to='/'>
+            Home 
           </Link>
-
+          
           <Link className='nav-link' style={{marginRight: '6%'}} to='/members'>
             Members 
           </Link>
@@ -37,6 +39,7 @@ const Navbar = () => {
           {/* <Link className='nav-link' style={{marginRight: '6%'}} to='/member'>
             Member
           </Link> */}
+
           <Link className='nav-link' style={{textAlign: 'center'}} to='/add-member'>
             Join
           </Link>
